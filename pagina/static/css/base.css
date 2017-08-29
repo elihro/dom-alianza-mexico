@@ -1,0 +1,27 @@
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
+}
+.navbar {
+    border-radius: 0;
+}
+.pie-de-parrafo {
+    font-style: italic;
+    font-size: 14px;
+}
+#contenido {
+    font-size: 16px;
+    padding: 0 30px 30px 30px;
+}
+#encabezado {
+    color: white;
+    padding: 10px 20px;
+}
+#subtitulo {
+    font-size: 18px;
+}
+#titulo {
+    font-size: 30px;
+    line-height: 35px;
+    line-height: 35px;
+}

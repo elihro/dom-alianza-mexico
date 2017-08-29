@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="/static/icons/mexico.ico" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block head %}
+    {% endblock %}
+    <title>
+        {% block title %}{% endblock %} - Alianza Mexico
+    </title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div id="encabezado">
+            <a href="/"><span id="titulo">Alianza México</span><br>
+                <span id="subtitulo">Dominations</span></a>
+        </div>
+    </nav>
+    <div id="contenido">
+        {% block contenido %}
+        {% endblock %}
+    </div>
+</body>
+</html>

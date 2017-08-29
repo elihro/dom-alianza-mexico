@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <p>Hola, pinchi mundo.</p>
-</body>
-</html>
+{% extends 'pagina/base.html' %}
+
+{% block title %}
+Inicio
+{% endblock %}
+
+{% block contenido %}
+    <p>
+        Bievenidos Aliados.<br>
+        <br>
+        Debido a que la estrategia del dropbox resultó ser impráctica, hice este sitio para llevar un registro de las reglas y estadísticas de la alianza.<br>
+        <br>
+        <a href="/las-reglas/">Las reglas</a><br>
+        <a href="/estadisticas/">Estadísticas</a><br>
+        <br>
+        <span class="pie-de-parrafo">@Elihro</span>
+    </p>
+{% endblock %}

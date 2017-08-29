@@ -1,0 +1,77 @@
+{% extends 'pagina/base.html' %}
+
+{% block title %}
+Inicio
+{% endblock %}
+
+{% block contenido %}
+    <h3>Las reglas</h3>
+    <ol id="lista-reglas">
+        <li>
+            Generación de guerras.
+            <ol type="a">
+                <li>
+                    Las guerras se generan los martes y los viernes de cada semana.
+                </li>
+                <li>
+                    Cualquiera de los líderes puede iniciar la guerra siempre y cuando sea en los días mensionados en el punto 1-a.
+                </li>
+                <li>
+                    En la guerra se incluye al mayor número de aliados disponibles (que tengan el botón de guerra activado), a criterio del líder que genera la guerra.
+                </li>
+            </ol>
+        </li>
+        <br>
+        <li>
+            Permanencia en la alianza.
+            <ol type="a">
+                <li>
+                    Se hace una depuración el última día de cada mes donde se expulsa a todos los alidados que no cumplan con los criterios de permanencia (mas adelante se mencionan los criterios de permanencia).
+                </li>
+                <li>
+                    Los alidos NUEVOS no pueden ser expulsados el mes en que se unen a la alianza.<br>
+                    Ejemplo: Si el <em>aliado0160</em> se une el 20/08/2017 no podrá ser expulsado en la depuración del 31/08/2017, sino hasta la depuración del 30/09/2017.
+                </li>
+            </ol>
+        </li>
+        <br>
+        <li>
+            Puntajes de participación.
+            <ol type="a">
+                <li>
+                    Cada mes se genera una estadística de la participación de los aliados en las guerras mundiles. Para esto se usa el siguiente sistema de puntaje:<br>
+                    Puntajes:
+                    <ul type="disc">
+                        <li>
+                            +2 puntos por 2 batallas en una guerra mundial.
+                        </li>
+                        <li>
+                            +1 punto por 1 batalla en una guerra mundial.
+                        </li>
+                        <li>
+                            0 puntos por no entrar a la guerra. Es decir, que no fue incluido al generar la guerra.
+                        </li>
+                        <li>
+                            -2 puntos por entrar a la guerra y no hacer ningún ataque.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Los puntajes se reinician después de cada depuración mensual.
+                </li>
+            </ol>
+        </li>
+        <br>
+        <li>
+            Criterios de permanencia.
+            <ol type="a">
+                <li>
+                    Se expulsará a todo aliado que no haya participado al menos en una guerra mundial en el mes al momento de la depuración.
+                </li>
+                <li>
+                    Se expulsará a todo aliado que no tenga como mínimo un puntaje de participación acumulado de 0, a menos que esto cause conflicto con el punto 4-a.
+                </li>
+            </ol>
+        </li>
+    </ol>
+{% endblock %}
